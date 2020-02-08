@@ -1,5 +1,5 @@
 {
-  "branches": [{
+  "branches": ["next", {
     "name": "master",
     "channel": "beta",
     "prerelease": "beta"

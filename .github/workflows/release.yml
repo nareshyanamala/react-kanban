@@ -1,13 +1,12 @@
 name: Release
 
-on:
-  repository_dispatch:
-    types: [release]
+on: repository_dispatch
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    if: github.event.action == 'release'
     steps:
       - name: Checkout
         uses: actions/checkout@v1
